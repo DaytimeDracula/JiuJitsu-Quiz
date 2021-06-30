@@ -1,0 +1,82 @@
+/*Color pallete*/
+:root {
+    --dark: #252525;
+    --light: #64DFDF;
+    --highlight: #80FFDB;
+    --purple: #6930C3;
+  }
+
+  /*Wildcard*/
+*{
+    margin: 0 auto;
+    font-size: 1.6vh;
+    color: var(--purple)
+}
+
+/* Main HTML elements*/
+h1{
+    font-size: 300%;
+}
+
+h2{
+    font-size: 200%;
+}
+
+h3{
+    font-size: 150%;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+    font-size: 200%;
+}
+
+html{
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30%;
+    background-color: var(--light);
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 100%;    
+}
+/*Game elements*/
+
+/*Leaderboard*/
+.leaderboard{   
+   width:30%; 
+   text-align: start;
+}
+
+.userAnswers{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+/*Timer*/
+.timer-display{
+   font-size: 200%;
+   text-align: end;
+   width: 30%;    
+}
+
+/*Content Hider*/
+.hidden{
+    display:none;
+}

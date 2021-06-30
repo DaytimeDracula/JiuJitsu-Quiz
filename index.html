@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Jiu Jitsu Quiz</title>
+</head>
+
+<body>
+    <header>
+        <div class="scoreboard">
+            <button id="scoreboard-btn">
+                Leaderboards
+            </button>
+        </div>
+        <button id="start-btn">
+            <h3>Start Game!</h3>
+        </button>
+        <div class="timer-display">
+            Time Remaining: <h3 id="timer"></h3>
+        </div>
+    </header>
+    <main>
+        <div id="question" class="hidden">
+            <h2 id="question-title"></h2>
+            <div id="userAnswers" class="userAnswers"></div>
+            <span id="display-message"></span>
+
+        </div>
+        
+        <div id="goodbye" class="hidden">
+            <h1>Here's how you did: </h1>
+            <p>Your score:  <span id="userScore"></span></p>
+            <p>Your name: <input type="text" id="userName" max=3 /></p>
+            <button id="submit-btn">Submit your score!</button>
+        </div>
+
+        <h1 id="leaderboard" class="hidden">Leaderboards</h1>
+        <h2 id="userName-header">
+            <p id="userName"></p>
+            <p id="userScore"></p>
+        </h2>
+
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="./js/question-set.js"></script>
+</body>
+
+</html>
